@@ -1,7 +1,7 @@
 #######################
-First Pair Assingnment ICSScDA
-Daniel Salgado-Moreno
-September-October 2015
+# First Pair Assingnment ICSScDA
+# Daniel Salgado-Moreno
+# September-October 2015
 #######################
 
 #Find working directory
