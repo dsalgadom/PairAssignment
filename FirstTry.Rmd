@@ -9,22 +9,26 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Session 3 First RMarkdown Try
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+First I will try to use some do files from previous sessions. 
+We are using the Swiss Dataset included in RStudio. 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## This a Histogram
 
-```{r cars}
-summary(cars)
+```{r swisshist, echo=FALSE}
+data(swiss)
+summary(swiss)
+hist(swiss$Examination, main = 'Swiss Canton Draftee Examination Scores (1888)',
+     xlab='% receiving highest mark on army exam')
 ```
 
-## Including Plots
+## Lets try a box plot
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r boxplot, echo=FALSE}
+boxplot(swiss$Examination, main = '% of Draftees with Hieghest Mark')
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Now some math formulas
+
+The expected value of a discret randmo variable is: $E[X]=\sum_{∞}(x_{i}p_{j})$
