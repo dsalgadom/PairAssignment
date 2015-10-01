@@ -12,3 +12,4 @@ is.na(Examinationlog)
 is.na(swiss$Fertility)
 
 # trying out
+# now it worked
