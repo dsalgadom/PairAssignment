@@ -1,0 +1,19 @@
+{
+    "collab_server" : "",
+    "contents" : "values <- rnorm (1000, mean = 10)\nvalue_mean <-mean(values)\nround(value_mean, digits = 2)\nlibrary(magrittr)\nrnorm(1000, mean = 10)%>%mean()%>% round(digits=2)\n\n#creat a function\nfun_mean <- function(x){sum(x)/length(x)}\n## find the mean \nfun_mean(x=swiss$Examination)\n\n#descriptive statistics: central tendency \n#histogram\nhist(swiss$Examination)\n#styling\nhist(swiss$Examination, main = 'Swiss Canton Draftee Examination Scores (1888)',\n     xlab='% receiving highest mark on army exam')\n\n#finding means\nmean(swiss$Examination)\n#If you have missing values\nmean(swiss$Examination, na.rm = TRUE)\n\n",
+    "created" : 1443175152847.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "331654683",
+    "id" : "74E26606",
+    "lastKnownWriteTime" : 1442522730,
+    "path" : "~/HSoG/DataAnalysis/GitHub/PairAssignment/1st try.R",
+    "project_path" : "1st try.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Session3\"\nauthor: \"Daniel Salgado Moreno\"\ndate: \"25 September 2015\"\noutput: html_document\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n## Session 3 First RMarkdown Try\n\nFirst I will try to use some do files from previous sessions. \nWe are using the Swiss Dataset included in RStudio. \n\n## This a Histogram\n\n```{r swisshist, echo=FALSE}\ndata(swiss)\nsummary(swiss)\nhist(swiss$Examination, main = 'Swiss Canton Draftee Examination Scores (1888)',\n     xlab='% receiving highest mark on army exam')\n```\n\n## Lets try a box plot\n\n```{r boxplot, echo=FALSE}\nboxplot(swiss$Examination, main = '% of Draftees with Hieghest Mark')\n```\n\n## Now some math formulas\n\nThe expected value of a discret randmo variable is: $E[X]=\\sum_{∞}(x_{i}p_{j})$\n",
+    "created" : 1443175405018.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3265232490",
+    "id" : "3F0E2372",
+    "lastKnownWriteTime" : 1443178905,
+    "path" : "~/HSoG/DataAnalysis/GitHub/PairAssignment/FirstTry.Rmd",
+    "project_path" : "FirstTry.Rmd",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

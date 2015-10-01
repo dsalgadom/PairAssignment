@@ -1,0 +1,19 @@
+{
+    "collab_server" : "",
+    "contents" : "library(dplyr)\nmean (1:10)\n\nnumber <- 10\nwords <- \"Hello World\"\nnumeric_vector <- c(1, 2, 3)\ncharacter_vector <- c('Albania', 'Botswana', 'Cambodia')\nfruits <- c(1, 1, 2)\nfruit_names <- c('apples', 'mangos')\nfruits_factor <- factor(fruits, labels = fruit_names)\nsummary(fruits_factor)\ncombined <- cbind(numeric_vector, character_vector)\n> combined\n# in matrices Vectors need to have objects from the same length and same width \ncombined_df <- data.frame(numeric_vector, character_vector, stringsAsFactors = FALSE)\ncombined_df\n# Combine numeric_vector and character_vector into a data frame\n# Create a list with three objects of different lengths\ntest_list <- list(countries = character_vector, not_there = c(NA, NA), more_numbers = 1:10)\ntest_list\n# Summarise combined_df\nsummary(combined_df, digits = 2)\n#Funtions are always follow by two parentesis\n#arguments are separated by commas\ncombined_df$character_vector\n##The $ is known as the component selector. It selects a component of an object.\nsave.image(\"~/HSoG/Introduction to Collaborative Social Science Data Analysis/class 1/1st Assignment.RData\")\n# Select the second row and first column of combined_df\ncombined_df[2, 1]\n# Select the first two rows\ncombined_df[c(1, 2), ]\n# Select the character_vector column\ncombined_df[, 'character_vector']\ncombined_df$character_vector[3] <- 'China'\ncombined_df$character_vector\ncombined_df$new_var <- 1:3\ncombined_df",
+    "created" : 1443175157139.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "584022152",
+    "id" : "8AEF9172",
+    "lastKnownWriteTime" : 1442520466,
+    "path" : "~/HSoG/DataAnalysis/GitHub/PairAssignment/dofile1.R",
+    "project_path" : "dofile1.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

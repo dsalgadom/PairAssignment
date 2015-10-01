@@ -1,0 +1,19 @@
+{
+    "collab_server" : "",
+    "contents" : "data(swiss)\n?swiss\nnames(swiss)\nsummary(swiss)\n\n#I will try some mathematical functions\nlog(swiss$Examination)\nExaminationlog <- log(swiss$Examination)\nmean(Examinationlog)\nmean(Examinationlog, na.rm=T)\nis.na(Examinationlog)\nis.na(swiss$Fertility)\n\n",
+    "created" : 1443175053653.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1290774487",
+    "id" : "AD18E5A6",
+    "lastKnownWriteTime" : 1442572072,
+    "path" : "~/HSoG/DataAnalysis/GitHub/PairAssignment/swiss try 2.R",
+    "project_path" : "swiss try 2.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

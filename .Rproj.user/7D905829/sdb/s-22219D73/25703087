@@ -1,0 +1,19 @@
+{
+    "collab_server" : "",
+    "contents" : "values <- rnorm (1000, mean = 10)\nvalue_mean <-mean(values)\nround(value_mean, digits = 2)\nlibrary(magrittr)\nrnorm(1000, mean = 10)%>%mean()%>% round(digits=2)\n\n#creat a function\nfun_mean <- function(x){sum(x)/length(x)}\n## find the mean \nfun_mean(x=swiss$Examination)\n\n#descriptive statistics: central tendency \n#histogram\nhist(swiss$Examination)\n#styling\nhist(swiss$Examination, main = 'Swiss Canton Draftee Examination Scores (1888)',\n     xlab='% receiving highest mark on army exam')\n\n#finding means\nmean(swiss$Examination)\n#If you have missing values\nmean(swiss$Examination, na.rm = TRUE)\n\n#loops\n#You can ‘loop’ through the data set to find the mean for each column\nfor(i in 1:length(names(swiss))){swiss[, i] %>% \n    mean() %>% round(digits=1)%>% paste(names(swiss)[i], ., '\\n')%>% cat()}\n\n#Median\nmedian(swiss$Examination)\n\n# Use summary to find the MODE\n\n#Simple bar chart\ndevtools::source_url('http://bit.ly/OTWEGS')\nplot(MortalityGDP$region, xlab='Region')\n\n#Variation\n#Range\nrange(swiss$Examination)\n#Quartiles\nsummary(swiss$Examination)\n#Interquartile Range IQR=Q3-Q1\nIQR(swiss$Examination)\n#Boxplot\nboxplot(swiss$Examination, main = '% of Draftees with Hieghest Mark')\n#Variance\nvar(swiss$Examination)\n#Standart DEviation\nsd(swiss$Examination)\n#Standart Error\nsd_error <- function (x) {sd(x)/sqrt(length(x))}\nsd_error(swiss$Examination)\n\nplot(log(swiss$Education), swiss$Examination)\ncor.test(log(swiss$Education), swiss$Examination)\n\ndata()\ndata(UCBAdmissions)\nsummary(UCBAdmissions)\n?summaary\n?UCBAdmissions\ndetach(swiss)\nrm(swiss)\n\nnames(UCBAdmissions)\ndata(UCBAdmissions)\nhead(UCBAdmissions)\n",
+    "created" : 1443175161480.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4131354338",
+    "id" : "25703087",
+    "lastKnownWriteTime" : 1443190368,
+    "path" : "~/HSoG/DataAnalysis/GitHub/PairAssignment/dofile2.R",
+    "project_path" : "dofile2.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
