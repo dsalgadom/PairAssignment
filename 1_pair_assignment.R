@@ -7,8 +7,10 @@
 #Find working directory
 getwd()
 list.files()
-setwd('Users/dsalgadom/HSoG/Introduction_to_Collaborative_Social_Science_Data_Analysis/git_repos')
+setwd('C://Users/larsunterwegs/Desktop/PairAssignment')
+# C://Users/larsunterwegs/Desktop/PairAssignment
 getwd()
 pwd()
 cd('Users/dsalgadom/HSoG/Introduction_to_Collaborative_Social_Science_Data_Analysis/git_repos')
 
+?pwd
