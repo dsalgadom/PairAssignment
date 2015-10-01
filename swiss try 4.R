@@ -11,3 +11,4 @@ mean(Examinationlog, na.rm=T)
 is.na(Examinationlog)
 is.na(swiss$Fertility)
 
+# trying out
